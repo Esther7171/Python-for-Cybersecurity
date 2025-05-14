@@ -255,5 +255,125 @@ class demo{
 
 #### Data types
 
+Java is a typed language
+
+DATA Type are two types:
+
+1. Primitive
+2. Non-Primitive
+
+
+#### 1. Primitive data type
+
+we need to remember than, These are permanent in java and java have 8 primitive data type.
+
+Ever data type have differnt work purpose and different size of memory
+
+* byte
+  * byte have 1 byte memory size = 8 bits.(01 is 1 bit that mean eight 01 are 8 bit)
+* short
+ *
+* char
+ * It take 2 bytes of memory 
+* boolean
+ * It take 1 bytes of memory 
+* int
+ * It take 4  bytes of memory 
+* long
+ * It take 8 bytes of memory 
+* float
+ * It take 4 bytes of memory 
+* double
+ * It take 8 bytes of memory 
+
+This bytes are count in 64-bit system
+
+#### 2. Non-Primitive data type
+
+we can customise then and create them
+
+* String
+* Array
+* Class
+* Object
+* Interface
+
+
+Let pratice this:
+```java
+class demo{
+    public static void main(String args[]){
+        // add two number
+        int a = 10;
+        int b = 20;
+        int sum = a + b;
+        System.out.println(sum);
+        // subtract two number
+        int sub = b - a;
+        System.out.println(sub);
+        // Multiply
+        int mul = a * b;
+        System.out.println(mul);
+    }
+}
+```
+
+#### Question
+
+<img width="371" alt="shapes at 25-05-14 12 43 55" src="https://github.com/user-attachments/assets/86dfde6b-111a-4a63-b4b5-bb34c8c4b98c" />
+
+Options:
+1. 
+```java 
+int solve = a * b / a -b;
+```
+
+2.
+```java
+int solve = (a * b) / (a - b);
+```
+
+If your code look like this:
+```java
+class demo {
+    public static void main(String args[]){
+        int a = 10;
+        int b = 5;
+        int solve = a * b / a - b;
+        System.out.println(solve);
+    }
+}
+```
+> **the output might be**
+>
+> 0 
+
+becouse the java dont follow BOADMAS rule, Java follow the priority of operators
+
+The priority list be like:
+1. * = multiply
+2. / = divide
+3. % =  Modular (this operator only print remainder)
+4. +
+5. -
+
+As 1 More thing java calculate form `left` to `right`.
+
+SO the correct answer is 2nd
+```java
+class demo {
+    public static void main(String args[]){
+        int a = 10;
+        int b = 5;
+        int solve = (a * b) / (a - b);
+        System.out.println(solve);
+    }
+}
+```
+> **the output might be**
+>
+> 10
 
 #### Input
+
+
