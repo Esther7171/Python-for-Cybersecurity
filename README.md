@@ -54,6 +54,19 @@ And all this code send to compiler that reside inside `JDK`. Compiler take all c
 
 In the stage of execution the JVM take **byte code** and convert it to `Native code` like machine code and computer understand it.
 
+Here, we have a class named CodeChef
+Inside the class, we have a main method: public static void main (String[] args)
+
+This line is special because it is where the program starts running. Let’s break it down:
+
+`public` – This means the method can be accessed by Java to start execution.
+`static` – This allows the method to run without creating an object of the class.
+`void` – This means the method does not return any value.
+`main` – The name of the method (always written as main).
+`String[] args` – This is used to pass arguments from the command line (not needed for now).
+`System.out.println("hii")`
+
+This is what we use to output/print anything to the screen. Note that this line contains a (;) semicolon at the end. Semicolon is mandatory at the end of statements in Java.
 
 #### Component of Code
 
@@ -205,6 +218,21 @@ class demo{
 
 #### Variables
 
+Declaring a variable
+When we declare a variable, we should also specify what type of variable it is. This is known as data type, basically meaning what type of data we are going to store in a variable. Each data type has a specific size in memory and a range of values that it can represent.
+
+Here are all the major data types and what they store in Java:
+
+| Data Type | Description | Example Declaration |
+|--|--|--|
+| int |	Stores integers | `int c = 100000;` |
+| long | Stores larger/smaller integers | `long d = 100000L;` |
+| float | Stores small decimal numbers | `float e = 10.5;` | 
+| double | Stores large decimal numbers | `double f = 10.5;` |
+| char | Stores single characters | `char g = 'A';` |
+| boolean | true or false value	boolean | `h = true;` |
+| String | Stores text (a sequence of characters) | `String i = "Hello";` |
+
 Variables are the container that store values
 
 Define variable in Java
@@ -317,6 +345,12 @@ class demo{
     }
 }
 ```
+|Operators|Description|Example|
+|--|--|--|
+|+|	Addition | a + b |
+|-|	Subtraction | a - b |
+|*|	Multiplication | a * b |
+|/|	Division | a / b |
 
 #### Question
 
@@ -376,4 +410,118 @@ class demo {
 
 #### Input
 
+At 1st we need to `import java utils` in our code then
 
+we imported a `Scanner` class in our code
+in this scanner class we pass `System.in` for inpute like we use `System.out` for output and `System.in` use for inpute
+
+```java
+import java.util.*;
+
+public class demo {
+
+    public static void main(String args[]){
+        Scanner test = new Scanner(System.in);
+        String hello = test.next();
+        System.out.println(hello);
+    }
+}
+```
+
+With Scanner class we created an `object` called "test" and declare test object as new Scanner and get input by System.in
+after that we created a variable hello aas string and make it equal to object test to store value as string and for print we use next function
+
+`Sc.next` can take only 1 token like if i enter a name `death esther` it will print only death bez death is single token and esther is 2nd tokken so for printing both token and all token we can use this function. `Sc.nextline` 
+```java
+import java.util.*;
+
+public class demo {
+
+    public static void main(String args[]){
+        Scanner test = new Scanner(System.in);
+        String hello = test.nextLine();
+        System.out.println(hello);
+    }
+}
+```
+* Using String as variable we use `nextLine`
+* Using int as varibale we use `nextInt`
+* Using int as varibale we use `nextFloat`
+* Using int as varibale we use `nextLong`
+etc..
+
+Question take Two Vaiable A,B and print there sum
+
+
+## Condition Statement
+
+* if
+* else if
+* else
+
+* Switch
+* break
+
+
+Writing If else structure
+```java
+if (Condition){
+    statement: 1;
+    statement: 2;    
+}
+else if (Condition){
+    statement: 3;
+    statement: 4;    
+}
+else{
+    statement: 0;
+}
+```
+
+Question: Age checker for driving  
+```java
+import java.util.Scanner;
+
+public class age_checker_for_driving {
+    public static void main(String args[]){
+        Scanner test = new Scanner(System.in);
+        System.out.print("Enter your age = ");
+        int age = test.nextInt();
+
+        if(age >= 18){
+            System.out.println("U can drive");
+        }
+        else{
+            System.out.println("U cant drive");
+        }
+    }
+}
+```
+
+Question 2: Odd even number calculator
+> Hint:
+> 
+> U can take in use of `%` Modular operator becouse it can show the reminder or 2 divided number and analysing reminder we can get idea of weither the number is odd or even.
+> If givin number divided by 2 and remainder = 0 then its an even number like. 10/2 = question is 5 and reminder is 0
+
+<img width="244" alt="test" src="https://github.com/user-attachments/assets/c93166b6-6b75-4357-ab7b-e99801be9c4f" />
+
+```java
+package questions;
+
+import java.util.Scanner;
+// Check Input is odd number or Even
+public class check_Odd_and_Even {
+    public static void main(String agrs[]){
+        Scanner check = new Scanner(System.in);
+        int number = check.nextInt();
+        
+        if(number % 2 == 0 ){
+            System.out.println("Even Number hai..");
+        }
+        else{
+            System.out.println("Even Number hai..");
+        }
+    }
+}
+```
