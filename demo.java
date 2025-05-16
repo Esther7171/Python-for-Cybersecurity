@@ -194,3 +194,25 @@
 //         System.out.println(sum);
 //     }
 // }
+
+// import java.util.*;
+
+// public class demo {
+
+//     public static void main(String args[]){
+//         Scanner test = new Scanner(System.in);
+//         double a = test.nextDouble();
+//         double b = 3.141592653d;
+//         System.out.println(b*(a*a));
+//     }
+// }
+
+import java.util.*;
+class demo{
+    public static void main(String args[]){
+        Scanner test= new Scanner(System.in);
+        String a = test.nextLine();
+       System.out.println("Hello, "+ a);
+    }
+}
+//O(1)
