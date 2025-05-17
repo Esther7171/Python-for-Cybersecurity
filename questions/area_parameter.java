@@ -1,21 +1,18 @@
 package questions;
-/*
 
-Area & Perimeter of Rectangle
+// Area & Perimeter of Rectangle
 
-Write a program for the following problem:
+// Write a program for the following problem:
 
-Let’s consider a rectangle of sides a = 11 and b = 13.
+// Let’s consider a rectangle of sides a = 11 and b = 13.
 
-Find and output area of the rectangle having sides as 
+// Find and output area of the rectangle having sides as 
 
-Find and output perimeter of the rectangle having side as a & b.
+// Find and output perimeter of the rectangle having side as a & b.
 
-For any rectangle, the formula for area is length * breadth.
+// For any rectangle, the formula for area is length * breadth.
 
-The formula for perimeter is 2 * (length + breadth).
-
-*/
+// The formula for perimeter is 2 * (length + breadth).
 
 public class area_parameter {
 

@@ -576,3 +576,24 @@ Question: If 3 is na odd number, print "Hello world"
 
 
 
+1 and 2 are true bez if 1st is true then statement directly get execute 
+
+
+
+### Switch Case
+
+Syntax
+```java
+Switch (variable){
+    Case 1:
+                statement 1;
+                break;
+    Case 2:
+                statement 2;
+                break
+    Case 3:
+                statement 3;
+                break;
+    default:
+                statement 4;
+}
