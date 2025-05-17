@@ -525,3 +525,50 @@ public class check_Odd_and_Even {
     }
 }
 ```
+
+Question 3: Write a program that checks the relationship between two variables a and b. If a == b, print 'equal'; if a > b, print 'a is greater'; and if a < b, print 'a is lesser'
+
+```java
+import java.util.*;
+
+public class relationship_checker {
+
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        // for a 
+        System.out.print("Enter the 1st number = ");
+        int a = sc.nextInt();
+        // for b
+        System.out.print("Enter the 2nd number = ");
+        int b = sc.nextInt();
+
+        // condition start here:
+
+        if(a == b){
+            System.out.println("Equal");
+        }
+        else if (a > b){
+                System.out.println("a is greater");
+            }
+        else{
+                System.out.println("a is lesser");
+            }
+        
+        }
+
+                
+}
+```
+
+Question: If 3 is na odd number, print "Hello world"
+
+1.
+![image](https://github.com/user-attachments/assets/e67968a5-d04c-4520-8f1b-b2f77cd64fda)
+
+2. 
+
+![image](https://github.com/user-attachments/assets/061d7f97-af28-42b6-9d1e-33653039cf50)
+
+3.
+
+![image](https://github.com/user-attachments/assets/64b25631-aad5-46b2-8963-a9d3efa30f12)
