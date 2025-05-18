@@ -11,7 +11,7 @@ Print "Hello, " without quotes, then print name.
 Example
 |Input|Output
 |--|--|
-|programmer|Hello, programmer
+|programmer|Hello, programmer|
 
 
 ### Solution
