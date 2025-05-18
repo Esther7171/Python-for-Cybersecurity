@@ -562,18 +562,26 @@ public class relationship_checker {
 
 Question: If 3 is na odd number, print "Hello world"
 
-1.
+1. 
 
-![image](https://github.com/user-attachments/assets/e67968a5-d04c-4520-8f1b-b2f77cd64fda)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/e67968a5-d04c-4520-8f1b-b2f77cd64fda" height="200"></img>
+</div>
+
+
 
 2. 
 
-![image](https://github.com/user-attachments/assets/061d7f97-af28-42b6-9d1e-33653039cf50)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/061d7f97-af28-42b6-9d1e-33653039cf50" height="200"></img>
+</div>
+
 
 3.
 
-![image](https://github.com/user-attachments/assets/64b25631-aad5-46b2-8963-a9d3efa30f12)
-
+<div align="center">
+<img src="https://github.com/user-attachments/assets/64b25631-aad5-46b2-8963-a9d3efa30f12" height="200"></img>
+</div>
 
 
 1 and 2 are true bez if 1st is true then statement directly get execute 
