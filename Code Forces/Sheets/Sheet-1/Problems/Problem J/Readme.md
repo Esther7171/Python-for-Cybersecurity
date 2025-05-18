@@ -60,20 +60,19 @@ So the answer is: No Multiples.
 ### Soultion
 ```java
 import java.util.*;
-public class demo{
-    public static void  main(String args[]){
+
+public class demo {
+
+    public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int A = sc.nextInt();
-        int B = sc.nextInt();
-        double result = (double) A / B;
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        int floor = (int) Math.floor(result);
-        int ceil = (int) Math.ceil(result);
-        int round = (int) Math.round(result);
-
-        System.out.println("floor " + A + " / " + B + " = " + floor);
-        System.out.println("ceil " + A + " / " + B + " = " + ceil);
-        System.out.println("round " + A + " / " + B + " = " + round);
+        if(a%b == 0 | b%a == 0){
+            System.out.println("Multiples");   
+        }else{
+            System.out.println("No Multiples");
+        }
     }
 }
 ```
