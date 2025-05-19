@@ -1,55 +1,78 @@
 # [L. The Brothers](https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/L)
 
-Given 3 numbers *A*, *B* and *C*, Print the **minimum** and the **maximum** numbers.
+Given two person names.
+
+Each person has {"the first name" + "the second name"}
+
+Determine whether they are brothers or not.
+
+> Note:
+>
+> The two persons are brothers if they share the same second name.
+
+
 ### Input
 
-Only one line containing two numbers A, B (1  ≤  A, B  ≤  106)
+First line will contain two Strings *F1*, *S1* which donates the first and second name of the 1st person.
+
+Second line will contain two Strings *F2*, *S2* which donates the first and second name of the 2nd person.
 
 ### Output
 
-Print the minimum number followed by a single space then print the maximum number.
+Print ***"ARE Brothers"*** if they are brothers otherwise print **"NOT"**.
 
 
 Examples
 |Input|
 |--|
-|1 2 3|
+|bassam ramadan|
+|ahmed ramadan|
 
 |Output|
 |--|
-|1 2 3|
+|ARE Brothers|
 
 |Input|
 |--|
-|1 2 3|
+|ali salah|
+|ayman salah|
 
 |Output|
 |--|
-|1 2 3|
+|ARE Brothers|
 
 |Input|
 |--|
-|10 20 -5|
+|ali kamel|
+|ali salah|
 
 |Output|
 |--|
-|10 20 -5|
+|NOT|
 
 ### Soultion
 ```java
-import java.util.*;
+import java.util.Scanner;
 
 public class demo {
 
-    public static void main(String args[]){
+    public static void main(String agrs[]){
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
 
-        int min = Math.min(a, Math.min(b, c));
-        int max = Math.max(a, Math.max(b, c));
-        System.out.println(min +" " + max);
+        String first_name = sc.nextLine();
+        String Second_name = sc.next.Line();
+
+        // Spliting strings
+        String surname1 = first_name.split(" ")[1];
+        String surname2 = Second_name.split(" ")[2];
+
+        // condition
+        if(surname1.equals(surname2)){
+            System.out.println("ARE Brothers");
+        }else{
+            System.out.println("NOT");
+        }
+
     }
 }
 ```

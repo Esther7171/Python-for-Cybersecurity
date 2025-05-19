@@ -1,197 +1,150 @@
-# Introduction to Java Programming
+# **Introduction to Java Programming**
 
-1. What is Code ?
-2. Input-Output, Variables, Data Types
-3. Conditional statmemts
-4. Loops
-5. All about Patterns
-6. Methods / Functions
-7. Space & Time complexity
-8. Arrays
-9. 2D Arrays
-10. Strings
-11. StringBuilder
-12. Bit Manipulation
+### **1. What is Code?**
 
+Code is a set of instructions written in a programming language that a computer can understand and execute.
 
-#### 1. What is Code ?
-Code is a set of instructions that a computer can understand.
+### **2. What is a Programming Language?**
 
-#### 2. What is programming language
-A programming language is a set of rules that define how to write code.
+A programming language is a formal set of rules and syntax used to write code that instructs a computer on how to perform specific tasks.
 
-#### 3. Binarry 
-* A computer understands only 0 & 1 binnary 
-* When current come in Circuit, it is 1.
-* When current does not come in Circuit, it is 0.
-            Or
-* When devices go high voltage it is 1
-* When devices go low voltage it is 0.
+### **3. Binary**
 
+* A computer understands only binary — a system that uses **0s and 1s**.
+* **1** represents the presence of electric current in a circuit.
+* **0** represents the absence of electric current.
 
-Java is a high level programming language.
+  **Alternatively:**
+* **1** = High voltage (device is on)
+* **0** = Low voltage (device is off)
 
-So we write a code in java and there is compiler which converts the code into machine language or binary.
+### **What is Java?**
 
+Java is a **high-level programming language**, which means it's closer to human language and easier to read and write compared to low-level languages.
 
+When we write code in Java:
 
-To run java code our code pass two steps 
+* It is first converted into **bytecode** by the **Java compiler**.
+* This bytecode is then executed by the **Java Virtual Machine (JVM)**, which translates it into **machine language (binary)** that the computer can understand.
 
-1. step is compilation
-2. execution 
+Thanks, Yash! Here's your refined and well-organized version of the notes. I've polished the grammar, made the explanations simpler, added headings for structure, and clarified some key concepts:
+
+## **Code Execution in Java**
+
+To run a Java program, the code goes through **two main stages**:
+
+1. **Compilation**
+2. **Execution**
 
 
-In jdk kit there is Jre component (Java runtime enviornment) 
-In Jre there is another component JVM(Java Virutal Machine)
+## **JDK, JRE, and JVM Explained**
 
-JDK --> JRE --> JVM
-they stored level wise with help of this our java code runs
+Java follows a layered architecture:
 
+```
+JDK → JRE → JVM
+```
 
-In stage of complie , any code we write we called it as `source code` we save this code with help of extention `.java`
+* **JDK (Java Development Kit):** Contains tools needed to develop Java applications, including the **compiler**.
+* **JRE (Java Runtime Environment):** Provides the environment to run Java programs.
+* **JVM (Java Virtual Machine):** Executes the bytecode and converts it to machine-specific instructions.
 
-And all this code send to compiler that reside inside `JDK`. Compiler take all code and it convert the **source code** in `Byte code` and save as `.class` and the byte code run at any os and machine with help of JRE.
+## **Step-by-Step Java Code Execution**
 
-In the stage of execution the JVM take **byte code** and convert it to `Native code` like machine code and computer understand it.
+### **1. Compilation Stage**
 
-Here, we have a class named CodeChef
-Inside the class, we have a main method: public static void main (String[] args)
+* The code you write is called **source code**.
+* Source code is saved with the `.java` extension.
+* The **Java compiler** (inside the JDK) compiles this code into **bytecode**, saved as a `.class` file.
+* Bytecode is platform-independent — it can run on any OS using JRE.
 
-This line is special because it is where the program starts running. Let’s break it down:
+### **2. Execution Stage**
 
-`public` – This means the method can be accessed by Java to start execution.
-`static` – This allows the method to run without creating an object of the class.
-`void` – This means the method does not return any value.
-`main` – The name of the method (always written as main).
-`String[] args` – This is used to pass arguments from the command line (not needed for now).
-`System.out.println("hii")`
+* The **JVM** takes the bytecode and translates it into **native machine code** that your computer can understand and execute.
 
-This is what we use to output/print anything to the screen. Note that this line contains a (;) semicolon at the end. Semicolon is mandatory at the end of statements in Java.
+## **Structure of a Java Program**
 
-#### Component of Code
+Here’s a basic example:
 
-1. **Functions** or **Method** are the part of code who preform the work 
-
-like if i have to add 2 number we write all the code in a function  
-
-and the function in this code is 
 ```java
-class demo {
-    public static void main(String args []){
-        System.out.println("Hello World");
+class CodeChef {
+    public static void main(String[] args) {
+        System.out.println("Hi");
     }
 }
 ```
 
-The `void main` the function name is `main` and the function return type is `void`. void mean empty. it didnt retun aything
+### Breakdown of the `main` Method:
 
-2. class 
+* `public` – Accessible by the JVM from anywhere.
+* `static` – Can run without creating an object of the class.
+* `void` – Does not return any value.
+* `main` – Entry point of the program.
+* `String[] args` – Used for command-line arguments (optional for now).
+
+## **Printing Output in Java**
+
+### **1. Using `System.out.print()`**
+
+Prints the text but stays on the **same line**.
 
 ```java
-class main{
-    void main(){
-
-    }
-}
-```
-ALL the code are writen in function, And all the function are stored in `Class`.
-
-The class is big entity that can contain many function
-
-class is like a kitchen and jar and box that contain somethingh are function.
-
-
-
-#### Output
-
-how to take output in java
-```java
-System.out.print("hii");
-``` 
-For output we use `System.out.print` class.
-
-print is a function to print
-
-to terminate line of code we need to use `;` to defin the code is end like `.` full stop.
-
-
-
-So if i run this code 
-
-1. print
-```java
-class demo{
-    public static void main(String args []){
-        System.out.print("Hello World");
-        System.out.print("Hello World");
-    }
-}
+System.out.print("Hello");
+System.out.print("World");
 ```
 
-> **Output**
->   
-> Hello WorldHello World
+> **Output:** `HelloWorld`
 
-2. Println
+### **2. Using `System.out.println()`**
 
-TO print in Next line in java we can take in use of this function `println`
+Prints the text and moves to the **next line**.
 
 ```java
-class demo{
-    public static void main(String args []){
-        System.out.println("Hello World");
-        System.out.print("Hello World");
-    }
-}
+System.out.println("Hello");
+System.out.println("World");
 ```
 
-> **Output**
->
-> Hello World
-> Hello World
+> **Output:**
 
+```
+Hello
+World
+```
 
-print dont give new line
-println give new line 
+### **3. Using `\n` (Escape Sequence)**
 
-3 "\n"
-to continua in next line we can also use an escape sequence in java like `\n`
+For manual line breaks within `print()`:
 
 ```java
-class demo{
-    public static void main(String args []){
-        System.out.print("Hello World\n");
-        System.out.print("Hello World\n");
-        System.out.print("Hello World");
-    }
-}
+System.out.print("Hello\nWorld");
 ```
 
-> **Output**
-> 
-> Hello World
-> Hello World
-> Hello World
+> **Output:**
 
+```
+Hello
+World
+```
 
-Or we can use it like this to print single out in two line with single pirnt 
+You can also print multiple lines with one statement:
+
 ```java
-class demo{
-    public static void main(String args []){
-        System.out.print("Hello World\nTesting This\nJava is cool");
-    }
-}
+System.out.print("Hello\nTesting This\nJava is cool");
 ```
 
-> **Output**
->
-> Hello World
-> Testing This 
-> Java is cool
+> **Output:**
+
+```
+Hello
+Testing This
+Java is cool
+```
 
 
+## **Printing Patterns in Java**
 
-#### Question: print this patter
+### **Example: Print a star pattern**
+
 ```
 *
 **
@@ -199,158 +152,216 @@ class demo{
 ****
 *****
 ```
+
 ```java
-class demo{
-    public static void main(String args[]){
-        // with print + println
+class Demo {
+    public static void main(String[] args) {
+        // Using println()
         System.out.println("*");
         System.out.println("**");
         System.out.println("***");
         System.out.println("****");
         System.out.println("*****");
-        System.out.println("");
-        // with print + \n
+
+        System.out.println(""); // Empty line
+
+        // Using \n in a single print
         System.out.print("*\n**\n***\n****\n*****");
     }
 }
 ```
 
+## **Comments in Java**
 
-#### Variables
+### **1. Single-line Comments**
 
-Declaring a variable
-When we declare a variable, we should also specify what type of variable it is. This is known as data type, basically meaning what type of data we are going to store in a variable. Each data type has a specific size in memory and a range of values that it can represent.
-
-Here are all the major data types and what they store in Java:
-
-| Data Type | Description | Example Declaration |
-|--|--|--|
-| int |	Stores integers | `int c = 100000;` |
-| long | Stores larger/smaller integers | `long d = 100000L;` |
-| float | Stores small decimal numbers | `float e = 10.5;` | 
-| double | Stores large decimal numbers | `double f = 10.5;` |
-| char | Stores single characters | `char g = 'A';` |
-| boolean | true or false value	boolean | `h = true;` |
-| String | Stores text (a sequence of characters) | `String i = "Hello";` |
-
-Variables are the container that store values
-
-Define variable in Java
+Start with `//`. Anything after `//` is ignored.
 
 ```java
-class demo{
-    public static void main(String args[]){
-       String name = "Death";
-       int a = 2;
-       int b = 4;
-       double price = 25.25;
-       System.out.println(name);
-       System.out.println(a);
-       System.out.println(b);
+// This is a comment
+System.out.println("Hello World");
+```
+
+### **2. Multi-line Comments**
+
+Start with `/*` and end with `*/`.
+
+```java
+/* This code prints Hello World
+   to the screen. */
+System.out.println("Hello World");
+```
+
+## **Java Program Components**
+
+### **1. Functions/Methods**
+
+A **function** (also called a method in Java) is a block of code that performs a specific task.
+
+```java
+class Demo {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
     }
 }
 ```
-> **Output**
+
+* The method name here is `main`.
+* The return type is `void`, meaning it returns nothing.
+
+### **2. Class**
+
+In Java, all code is written **inside a class**.
+
+```java
+class Main {
+    void main() {
+        // code here
+    }
+}
+```
+
+* A **class** is like a container that holds functions.
+* You can think of a class as a **kitchen**, and functions as **tools or containers** inside it.
+
+
+
+## **Variables and Data Types in Java**
+
+
+### **Declaring Variables**
+
+When you declare a variable, you must specify its **data type** — this tells Java what kind of data the variable will hold. Each data type has a fixed size in memory and a specific range of values it can store.
+
+### **Common Data Types in Java**
+
+| Data Type | Description                          | Example Declaration   |
+| --------- | ------------------------------------ | --------------------- |
+| `int`     | Stores integers                      | `int c = 100000;`     |
+| `long`    | Stores larger integers               | `long d = 100000L;`   |
+| `float`   | Stores small decimal numbers         | `float e = 10.5f;`    |
+| `double`  | Stores large decimal numbers         | `double f = 10.5;`    |
+| `char`    | Stores a single character            | `char g = 'A';`       |
+| `boolean` | Stores true/false values             | `boolean h = true;`   |
+| `String`  | Stores text (sequence of characters) | `String i = "Hello";` |
+
+### **Example: Defining and Printing Variables**
+
+```java
+class Demo {
+    public static void main(String[] args) {
+        String name = "Death";
+        int a = 2;
+        int b = 4;
+        double price = 25.25;
+
+        System.out.println(name);
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(price);
+    }
+}
+```
+
+> **Output:**
 >
 > Death
 > 2
 > 4
 > 25.25
 
-We can even modify the value of variable values
 
+### **Modifying Variable Values**
+
+You can change variable values after declaring them:
 
 ```java
-class demo{
-    public static void main(String args[]){
-       String name = "Death";
-       int a = 2;
-       int b = 4;
-       double price = 25.25;
-       a = 10;
-       name = "Esther";
-       System.out.println(name);
-       System.out.println(a);
-       System.out.println(b);
+class Demo {
+    public static void main(String[] args) {
+        String name = "Death";
+        int a = 2;
+        int b = 4;
+        double price = 25.25;
+
+        a = 10;
+        name = "Esther";
+
+        System.out.println(name);
+        System.out.println(a);
+        System.out.println(b);
     }
 }
 ```
-> **Output**
+
+> **Output:**
 >
+> ```
 > Esther
 > 10
 > 4
+> ```
 
-#### Data types
+## **Data Types**
 
-Java is a typed language
+Java is a **strongly typed language**, meaning every variable must have a declared type.
 
-DATA Type are two types:
+### **1. Primitive Data Types**
 
-1. Primitive
-2. Non-Primitive
+Java has **8 primitive types** — these are predefined and always available.
 
+| Data Type | Memory Size     | Description                  |
+| --------- | --------------- | ---------------------------- |
+| `byte`    | 1 byte (8 bits) | Small integers (-128 to 127) |
+| `short`   | 2 bytes         | Medium-sized integers        |
+| `char`    | 2 bytes         | Single Unicode character     |
+| `boolean` | 1 byte\*        | `true` or `false`            |
+| `int`     | 4 bytes         | Standard integers            |
+| `long`    | 8 bytes         | Large integers               |
+| `float`   | 4 bytes         | Single-precision decimals    |
+| `double`  | 8 bytes         | Double-precision decimals    |
 
-#### 1. Primitive data type
-
-we need to remember than, These are permanent in java and java have 8 primitive data type.
-
-Ever data type have differnt work purpose and different size of memory
-
-* byte
-  * byte have 1 byte memory size = 8 bits.(01 is 1 bit that mean eight 01 are 8 bit)
-* short
- *
-* char
- * It take 2 bytes of memory 
-* boolean
- * It take 1 bytes of memory 
-* int
- * It take 4  bytes of memory 
-* long
- * It take 8 bytes of memory 
-* float
- * It take 4 bytes of memory 
-* double
- * It take 8 bytes of memory 
-
-This bytes are count in 64-bit system
-
-#### 2. Non-Primitive data type
-
-we can customise then and create them
-
-* String
-* Array
-* Class
-* Object
-* Interface
+\*Note: Actual size of `boolean` can depend on JVM implementation.
 
 
-Let pratice this:
+### **2. Non-Primitive Data Types**
+
+These are customizable and can be created by the programmer.
+
+* `String`
+* Arrays
+* Classes
+* Objects
+* Interfaces
+
+## **Practice: Simple Arithmetic Operations**
+
 ```java
-class demo{
-    public static void main(String args[]){
-        // add two number
+class Demo {
+    public static void main(String[] args) {
         int a = 10;
         int b = 20;
+
         int sum = a + b;
-        System.out.println(sum);
-        // subtract two number
+        System.out.println(sum); // 30
+
         int sub = b - a;
-        System.out.println(sub);
-        // Multiply
+        System.out.println(sub); // 10
+
         int mul = a * b;
-        System.out.println(mul);
+        System.out.println(mul); // 200
     }
 }
 ```
-|Operators|Description|Example|
-|--|--|--|
-|+|	Addition | a + b |
-|-|	Subtraction | a - b |
-|*|	Multiplication | a * b |
-|/|	Division | a / b |
+
+### **Basic Arithmetic Operators**
+
+| Operator | Description    | Example |
+| -------- | -------------- | ------- |
+| `+`      | Addition       | `a + b` |
+| `-`      | Subtraction    | `a - b` |
+| `*`      | Multiplication | `a * b` |
+| `/`      | Division       | `a / b` |
+| `%`      | Modulas(Get Reminder)        | `a % b` |
 
 #### Question
 
@@ -368,9 +379,10 @@ int solve = (a * b) / (a - b);
 ```
 
 If your code look like this:
+
 ```java
-class demo {
-    public static void main(String args[]){
+class Demo {
+    public static void main(String[] args) {
         int a = 10;
         int b = 5;
         int solve = a * b / a - b;
@@ -378,25 +390,52 @@ class demo {
     }
 }
 ```
-> **the output might be**
+
+> **Output:**
 >
-> 0 
+> 0
 
-becouse the java dont follow BOADMAS rule, Java follow the priority of operators
+### Why does this happen?
 
-The priority list be like:
-1. * = multiply
-2. / = divide
-3. % =  Modular (this operator only print remainder)
-4. +
-5. -
+Java **does not follow the traditional BODMAS rule strictly** as in mathematics. Instead, Java uses **operator precedence** and evaluates expressions **left to right** when operators have the same precedence.
 
-As 1 More thing java calculate form `left` to `right`.
 
-SO the correct answer is 2nd
+### Operator Precedence in Java (Relevant to Arithmetic):
+
+1. `*` (Multiplication)
+2. `/` (Division)
+3. `%` (Modulus - gives the remainder of division)
+4. `+` (Addition)
+5. `-` (Subtraction)
+
+### How Java Evaluates `a * b / a - b`
+
+Step-by-step evaluation for the expression:
+
 ```java
-class demo {
-    public static void main(String args[]){
+a * b / a - b
+```
+
+1. `a * b` → `10 * 5` = `50`
+2. `50 / a` → `50 / 10` = `5`
+3. `5 - b` → `5 - 5` = `0`
+
+Hence, the result is `0`.
+
+
+### Using Parentheses to Control Evaluation
+
+If you want to calculate:
+
+$$
+\frac{a \times b}{a - b}
+$$
+
+You must use parentheses to explicitly define the order:
+
+```java
+class Demo {
+    public static void main(String[] args) {
         int a = 10;
         int b = 5;
         int solve = (a * b) / (a - b);
@@ -404,9 +443,11 @@ class demo {
     }
 }
 ```
-> **the output might be**
+
+> **Output:**
 >
 > 10
+
 
 #### Input
 
