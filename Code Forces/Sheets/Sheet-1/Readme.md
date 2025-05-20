@@ -13,7 +13,7 @@
 |J|[Multiples](https://github.com/Esther7171/Java-Note/tree/main/Code%20Forces/Sheets/Sheet-1/Problems/Problem%20J#j-multiples)|
 |K|[Max and Min](https://github.com/Esther7171/Java-Note/tree/main/Code%20Forces/Sheets/Sheet-1/Problems/Problem%20K#k-max-and-min)|
 |L|[The Bothers](https://github.com/Esther7171/Java-Note/tree/main/Code%20Forces/Sheets/Sheet-1/Problems/Problem%20L#l-the-brothers)|
-|M|[Capital or Small or Digit]()|
+|M|[Capital or Small or Digit](https://github.com/Esther7171/Java-Note/tree/main/Code%20Forces/Sheets/Sheet-1/Problems/Problem%20M#m-capital-or-small-or-digit)|
 |N|[Char]()|
 |O|[Calculator]()|
 |P|[First digit !]()|
