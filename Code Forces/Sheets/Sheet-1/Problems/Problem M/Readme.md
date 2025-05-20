@@ -49,24 +49,31 @@ Examples
 import java.util.Scanner;
 
 public class demo {
-
     public static void main(String agrs[]){
         Scanner sc = new Scanner(System.in);
 
-        String first_name = sc.nextLine();
-        String Second_name = sc.next.Line();
+        // take inpute as char at index 0
+        char inp = sc.next().charAt(0);
 
-        // Spliting strings
-        String surname1 = first_name.split(" ")[1];
-        String surname2 = Second_name.split(" ")[2];
+        // Convert inpute into ascii
 
-        // condition
-        if(surname1.equals(surname2)){
-            System.out.println("ARE Brothers");
-        }else{
-            System.out.println("NOT");
+        int ascii = (int)inp;
+        // // add conditon
+
+        if (ascii >= 48 && ascii<=57 ){
+            System.out.println("IS DIGIT");
+        }
+        else if (ascii >=97 && ascii<=122){
+            System.out.println("ALPHA\nIS SMALL");
+
+        }
+        else if(ascii >= 65 && ascii<= 90){
+            System.out.println("ALPHA\nIS CAPITAL");
+        }
+        else{
+            System.out.println();
         }
 
-    }
+    }    
 }
 ```
