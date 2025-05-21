@@ -1,78 +1,54 @@
-# [L. The Brothers](https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/L)
+# [N. Char](https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/N)
 
-Given two person names.
+Given a letter *X*. If the letter is **lowercase** print the letter after converting it from **lowercase letter to uppercase letter**. Otherwise print the letter after converting it from **uppercase letter to lowercase letter**.
 
-Each person has {"the first name" + "the second name"}
-
-Determine whether they are brothers or not.
-
-> Note:
+> Note : 
 >
-> The two persons are brothers if they share the same second name.
-
+> difference between *'a'* and *'A'* in **ASCII** is *32* .
 
 ### Input
 
-First line will contain two Strings *F1*, *S1* which donates the first and second name of the 1st person.
-
-Second line will contain two Strings *F2*, *S2* which donates the first and second name of the 2nd person.
+Only one line containing a character X which will be a **capital** or **small** letter.
 
 ### Output
 
-Print ***"ARE Brothers"*** if they are brothers otherwise print **"NOT"**.
+Print the answer to this problem.
 
 
 Examples
 |Input|
 |--|
-|bassam ramadan|
-|ahmed ramadan|
+|a|
 
 |Output|
 |--|
-|ARE Brothers|
+|A|
 
 |Input|
 |--|
-|ali salah|
-|ayman salah|
+|A|
 
 |Output|
 |--|
-|ARE Brothers|
-
-|Input|
-|--|
-|ali kamel|
-|ali salah|
-
-|Output|
-|--|
-|NOT|
+|a|
 
 ### Soultion
 ```java
 import java.util.Scanner;
 
-public class demo {
-
-    public static void main(String agrs[]){
+public class Main {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);  // Read one character
 
-        String first_name = sc.nextLine();
-        String Second_name = sc.next.Line();
-
-        // Spliting strings
-        String surname1 = first_name.split(" ")[1];
-        String surname2 = Second_name.split(" ")[2];
-
-        // condition
-        if(surname1.equals(surname2)){
-            System.out.println("ARE Brothers");
-        }else{
-            System.out.println("NOT");
+        if (ch >= 'a' && ch <= 'z') {
+            ch = (char)(ch - 32);  // Convert to uppercase
+        } else if (ch >= 'A' && ch <= 'Z') {
+            ch = (char)(ch + 32);  // Convert to lowercase
         }
 
+        System.out.println(ch);
     }
 }
+
 ```

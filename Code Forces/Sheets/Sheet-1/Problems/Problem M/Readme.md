@@ -19,30 +19,27 @@ Print a single line contains **"IS DIGIT"** if X is digit otherwise, print **"AL
 Examples
 |Input|
 |--|
-|bassam ramadan|
-|ahmed ramadan|
+|A|
 
 |Output|
 |--|
-|ARE Brothers|
+|ALPHA \n IS CAPITAL|
 
 |Input|
 |--|
-|ali salah|
-|ayman salah|
+|9|
 
 |Output|
 |--|
-|ARE Brothers|
+|IS DIGIT|
 
 |Input|
 |--|
-|ali kamel|
-|ali salah|
+|a|
 
 |Output|
 |--|
-|NOT|
+|ALPHA \n IS SMALL|
 
 ### Soultion
 ```java

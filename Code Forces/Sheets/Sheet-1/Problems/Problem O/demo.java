@@ -1,23 +1,30 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class demo {
 
-    public static void main(String agrs[]){
+    public static void main(String args[]){
+
         Scanner sc = new Scanner(System.in);
 
-        String first_name = sc.nextLine();
-        String Second_name = sc.next.Line();
+        // 7+8 , 17+90
+        int a = sc.nextInt();
+        char b = sc.next().charAt(0);
+        int c = sc.nextInt();
 
-        // Spliting strings
-        String surname1 = first_name.split(" ")[1];
-        String surname2 = Second_name.split(" ")[2];
-
-        // condition
-        if(surname1.equals(surname2)){
-            System.out.println("ARE Brothers");
-        }else{
-            System.out.println("NOT");
+        switch (b) {
+            case '+':
+            System.out.println(a+c);
+            break;
+            case '-':
+            System.out.println(a-c);
+            break;
+            case '*':
+            System.out.println(a*c);
+            break;
+            case '/':
+            System.out.println(a/c);
+            break;
         }
-
+        
     }
 }
