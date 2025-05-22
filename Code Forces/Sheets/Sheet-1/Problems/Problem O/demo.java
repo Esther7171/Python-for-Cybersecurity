@@ -6,7 +6,6 @@ public class demo {
 
         Scanner sc = new Scanner(System.in);
 
-        // 7+8 , 17+90
         int a = sc.nextInt();
         char b = sc.next().charAt(0);
         int c = sc.nextInt();

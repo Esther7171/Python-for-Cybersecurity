@@ -646,6 +646,32 @@ Switch (variable){
     default:
                 statement 4;
 }
+```
 
 
+### LOOPS
 
+repatation in code
+
+types of loop
+
+* For Loop
+* While Loop
+* Do While Loop
+
+
+For loop Syntax
+```java
+for (initialisation; condition; updation){
+
+// do something
+
+}
+```
+
+if we want to print "Hello world" so we need to create a counter vairable for initialisation like integer that value in start is 0.
+```java
+int counter = 0
+```
+
+updataion is increment in counter variable 
