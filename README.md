@@ -660,7 +660,7 @@ types of loop
 * Do While Loop
 
 
-For loop Syntax
+### For loop Syntax
 ```java
 for (initialisation; condition; updation){
 
@@ -675,3 +675,47 @@ int counter = 0
 ```
 
 updataion is increment in counter variable 
+
+
+### While Loop
+
+
+
+/usr/share/wazuh-dashboard/plugins/wazuh/public/assets/images/themes/light#
+
+
+
+opensearch_security.ui.basicauth.login.brandimage: "https://www.elirodrigues.com/wp-content/uploads/2016/11/sample-logo-black.png"
+
+opensearchDashboards.branding:
+  logo:
+    defaultUrl: "https://www.elirodrigues.com/wp-content/uploads/2016/11/sample-logo-black.png"
+    darkModeUrl: "https://www.elirodrigues.com/wp-content/uploads/2016/11/sample-logo-black.png"
+  loadingLogo:
+    defaultUrl: "https://www.elirodrigues.com/wp-content/uploads/2016/11/sample-logo-black.png"
+    darkModeUrl: "https://www.elirodrigues.com/wp-content/uploads/2016/11/sample-logo-black.png"
+  mark:
+    defaultUrl: "https://www.elirodrigues.com/wp-content/uploads/2016/11/sample-logo-black.png"
+    darkModeUrl: "https://www.elirodrigues.com/wp-content/uploads/2016/11/sample-logo-black.png"
+
+
+
+
+
+
+
+
+
+
+opensearch_security.ui.basicauth.login.brandimage: "https://cybrotech.us/wp-content/uploads/2025/02/cropped_image.png"
+
+opensearchDashboards.branding:
+  logo:
+    defaultUrl: "https://cybrotech.us/wp-content/uploads/2025/02/cropped_image.png"
+    darkModeUrl: "https://cybrotech.us/wp-content/uploads/2025/02/cropped_image.png"
+  loadingLogo:
+    defaultUrl: "https://cybrotech.us/wp-content/uploads/2025/02/cropped_image.png"
+    darkModeUrl: "https://cybrotech.us/wp-content/uploads/2025/02/cropped_image.png"
+  mark:
+    defaultUrl: "https://cybrotech.us/wp-content/uploads/2025/02/cropped_image.png"
+    darkModeUrl: "https://cybrotech.us/wp-content/uploads/2025/02/cropped_image.png"
