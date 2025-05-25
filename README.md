@@ -674,7 +674,63 @@ if we want to print "Hello world" so we need to create a counter vairable for in
 int counter = 0
 ```
 
+we can also Use incremental operator like this
+* rather than this i = i + 1.
+* we can use i++ direclty.
+
+```java
+public class demo {
+
+    public static void main(String[] args) {
+        for(int counter=0;counter<=10;counter++){
+            System.out.println(counter);
+        }
+    }
+}
+```
 updataion is increment in counter variable 
 
+Question 1: Print "Hello World" 10 time
+```java
+public class demo {
+
+    public static void main(String[] args) {
+        for(int counter=0;counter<=10;counter = counter + 1){
+            System.out.println("Hello World");
+        }
+    }
+}
+```
+
+Quetion 2. Print '1. "Hello World" to 100. "Hello World"'
+```java
+public class demo{
+    public static void main(String[] args){
+        for(int i=0;i<=100;i=i+1){
+            System.out.println(i+ ". " + "\"Hello World\"" );
+        }
+    }
+}
+```
+Question 3: Print a number from 1 to 10 in vertical and horizontal
+
+```java
+public class loop_test {
+    public static void main(String agrs[]){
+        System.out.println();
+        String bold ="\033[1m Question\033[0m";
+        System.out.println(bold+"1: Print a 1 to 10 number using loop vertically");
+        for(int i=0;i<=10;i++){
+            System.out.println(i);
+        }
+        System.out.println();
+        System.out.println(bold+"2: Print a 1 to 10 number using loop horizontally");
+        for(int i=0;i<=10;i++){
+            System.out.print(i+" ");
+        }
+        for()
+    }
+}
+```
 
 ### While Loop
