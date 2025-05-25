@@ -215,3 +215,30 @@
 //        System.out.println("Hello, "+ a);
 //     }
 // }
+
+// public class demo {
+//     public static void main(String[] args) {
+//         int i = 0;
+//         do{
+//             System.out.println(i);
+//             i = i + 1;
+//         }
+//         while(i<=10);
+//     }
+// }
+// public class demo {
+
+//     public static void main(String args[]){
+
+//         int i = 20;
+
+//         while(i <= 10){
+//             System.out.println("While is here");
+//         }
+
+//         do{
+//             System.out.println("Doooo is here");
+//         }
+//         while(i<=10);
+//     }
+// }

@@ -734,3 +734,94 @@ public class loop_test {
 ```
 
 ### While Loop
+
+```java
+variable = here   -----> here is initialisation
+while(condition){  ----> here is condition
+    //do something ----> here is updation
+}
+```
+
+Question 1: print number 1 to 10 using while loop.
+
+```java 
+public class demo {
+
+    public static void main(String[] args) {
+        int i = 0;
+        while(i<=10){
+            System.out.println(i);
+            i = i + 1; // i++
+        }
+    }
+}
+```
+
+
+### Do While Loop
+```java
+variable = here
+do {
+    // do something
+} while(condition);
+```
+
+Question 1: print number 1 to 10 using while loop.
+```java
+public class demo {
+    public static void main(String[] args) {
+        int i = 0;
+        do{
+            System.out.println(i);
+            i = i + 1;
+        }
+        while(i<=10);
+    }
+}
+```
+
+DO vs While Loop difference 
+
+while check condition and then execute work, while do execute work then care for condition.
+
+```java
+public class demo {
+
+    public static void main(String args[]){
+
+        int i = 20;
+
+        while(i <= 10){
+            System.out.println("While is here");
+        }
+
+        do{
+            System.out.println("Doooo is here");
+        }
+        while(i<=10);
+    }
+}
+```
+
+if u run this code `dooo is here` would be printed bez while check for condition and do do his work and later check for conditon as i is not to 10 or lesser bez i value is already 20 so still do printed and while check.
+
+ Question 1: Print the sum of First n natural number.
+
+```java
+import java.util.Scanner;
+
+public class print_n_number_using_loop {
+    public static void main(String args[]){
+        System.out.print("Enter a number = ");
+        Scanner sc = new Scanner(System.in);
+
+        int n= sc.nextInt();
+        int sum = 0;
+        for(int i = 0; i<=n;i++){
+            sum = sum + i;
+            System.out.println(sum);
+        }
+    }
+}
+
+```
