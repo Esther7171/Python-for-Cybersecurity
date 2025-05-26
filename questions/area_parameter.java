@@ -1,5 +1,3 @@
-package questions;
-
 // Area & Perimeter of Rectangle
 
 // Write a program for the following problem:

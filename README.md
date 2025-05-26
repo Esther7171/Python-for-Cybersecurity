@@ -823,5 +823,28 @@ public class print_n_number_using_loop {
         }
     }
 }
+```
+Question 2: Print the table of a number inpute by user:
+format is :
+```
+2 x 1 = 2
+2 x 2 = 4
+...
+2 x 10 = 20
+```  
 
+Answer:
+```java
+import java.util.Scanner;
+
+public class Print_table {
+    public static void main(String[] args) {
+        System.out.print("Inpute the number = ");
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        for(int i = 1; i<=10;i++){
+            System.out.println(number + " x " + i +" = " + (i* number) );
+        } 
+    }
+}
 ```

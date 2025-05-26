@@ -1,78 +1,41 @@
-# [L. The Brothers](https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/L)
+# [P. First digit !](https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/P)
 
-Given two person names.
+Given a number *X*. Print **"EVEN"** if the first digit of *X* is even number. Otherwise print **"ODD"**.
 
-Each person has {"the first name" + "the second name"}
-
-Determine whether they are brothers or not.
-
-> Note:
->
-> The two persons are brothers if they share the same second name.
-
+For example: In *4569* the first digit is *4*, the second digit is *5*, the third digit is *6* and the fourth digit is 9.
 
 ### Input
 
-First line will contain two Strings *F1*, *S1* which donates the first and second name of the 1st person.
+Only one line containing a number *X (999 < X  ≤  9999)*
 
-Second line will contain two Strings *F2*, *S2* which donates the first and second name of the 2nd person.
 
 ### Output
 
-Print ***"ARE Brothers"*** if they are brothers otherwise print **"NOT"**.
-
+If the first digit is even print *"EVEN"* otherwise print *"ODD"*.
 
 Examples
 |Input|
 |--|
-|bassam ramadan|
-|ahmed ramadan|
+|4569|
 
 |Output|
 |--|
-|ARE Brothers|
+|EVEN|
 
 |Input|
 |--|
-|ali salah|
-|ayman salah|
+|3569|
 
 |Output|
 |--|
-|ARE Brothers|
+|ODD|
 
-|Input|
-|--|
-|ali kamel|
-|ali salah|
-
-|Output|
-|--|
-|NOT|
+> Note
+>
+> Second Example :
+> In 3569 the first digit is 3 and its ODD.
 
 ### Soultion
 ```java
-import java.util.Scanner;
 
-public class demo {
-
-    public static void main(String agrs[]){
-        Scanner sc = new Scanner(System.in);
-
-        String first_name = sc.nextLine();
-        String Second_name = sc.next.Line();
-
-        // Spliting strings
-        String surname1 = first_name.split(" ")[1];
-        String surname2 = Second_name.split(" ")[2];
-
-        // condition
-        if(surname1.equals(surname2)){
-            System.out.println("ARE Brothers");
-        }else{
-            System.out.println("NOT");
-        }
-
-    }
-}
 ```
