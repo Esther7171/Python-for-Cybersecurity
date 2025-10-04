@@ -1,7 +1,7 @@
 # [Sheet #1 (Data Type - Conditions)](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
 |Problems| Name |
 |--|--|
-|A| [Say Hello With C++](https://github.com/Esther7171/Java-Note/tree/main/Code%20Forces/Sheets/Sheet-1/Problems/Problem%20A#a-say-hello-with-c)|
+|A| [Say Hello With Python](https://github.com/Esther7171/Python-for-Cybersecurity/tree/main/Code/Python/CodeForces/Sheet-1/Problem%20A#a-say-hello-with-c)|
 |B| [Basic Data Type](https://github.com/Esther7171/Java-Note/tree/main/Code%20Forces/Sheets/Sheet-1/Problems/Problem%20B#b-basic-data-types)|
 |C|[Simple Calculator](https://github.com/Esther7171/Java-Note/tree/main/Code%20Forces/Sheets/Sheet-1/Problems/Problem%20C#c-simple-calculator)|
 |D|[Difference](https://github.com/Esther7171/Java-Note/tree/main/Code%20Forces/Sheets/Sheet-1/Problems/Problem%20D#d-difference)|
