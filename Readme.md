@@ -200,107 +200,279 @@ As a cybersecurity learner, **commenting is powerful** when writing scripts:
 * You can **disable dangerous payloads** while testing safely.
 * Your teammates can **understand exploits and patches** quickly if your comments are clear.
 
+---
 
-## Variable
-Variables are containers for storing data values.
+## Variables
 
-Creating Variables
-Python has no command for declaring a variable.
+Variables are containers for storing data values. In Python, you don’t need to declare a variable explicitly. A variable is created the moment you assign a value to it.
 
-A variable is created the moment you first assign a value to it.
-
-Example
-```
+```python
 x = 5
-y = "John"
+y = "Tom"
 print(x)
 print(y)
 ```
-output
-5 john
 
-Variables do not need to be declared with any particular type, and can even change type after they have been set.
+**Output:**
 
+```
+5
+Tom
+```
 
-x = 10
-x = "tom"
+---
+
+### Variables Are Dynamic
+
+Python variables can change type after assignment:
+
+```python
+x = 10      # x is an integer
+x = "Tom"   # now x is a string
 print(x)
+```
 
-## Casting
-If you want to specify the data type of a variable, this can be done with casting.
+**Output:**
 
-Example
-x = str(3)    # x will be '3'
-y = int(3)    # y will be 3
-z = float(3)  # z will be 3.0
+```
+Tom
+```
 
-Get the Type
-You can get the data type of a variable with the type() function.
+---
 
-Example
-x = 10
-y = "Tom"
-z = 9.9
+### Casting
+
+You can explicitly define a variable's data type using **casting**:
+
+```python
+x = str(3)    # '3' as string
+y = int(3)    # 3 as integer
+z = float(3)  # 3.0 as float
+
 print(type(x))
 print(type(y))
-print(type(x))
+print(type(z))
+```
 
-output:
-<class 'int'>
+**Output:**
+
+```
 <class 'str'>
+<class 'int'>
 <class 'float'>
+```
 
+---
 
-Variable Names
-A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+### Variable Names
 
-Rules for Python variables:
+* Must start with a letter or underscore (`_`)
+* Cannot start with a number
+* Can contain letters, numbers, and underscores (A-z, 0-9, and _ )
+* Are **case-sensitive** (`age`, `Age`, `AGE` are different)
+* Cannot be Python keywords (`for`, `if`, `while`, etc.)
+**Legal Examples:**
 
-A variable name must start with a letter or the underscore character
-A variable name cannot start with a number
-A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
-Variable names are case-sensitive (age, Age and AGE are three different variables)
-A variable name cannot be any of the Python keywords.
-ExampleGet your own Python Server
-Legal variable names:
-
+```python
 myvar = "John"
 my_var = "John"
 _my_var = "John"
 myVar = "John"
 MYVAR = "John"
 myvar2 = "John"
-Example
-Illegal variable names:
+```
 
+**Illegal Examples:**
+
+```python
 2myvar = "John"
 my-var = "John"
 my var = "John"
-Remember that variable names are case-sensitive
+```
 
-ADVERTISEMENT
+---
 
-REMOVE ADS
+### Multi-word Variable Names
 
-Multi Words Variable Names
-Variable names with more than one word can be difficult to read.
+* **Camel Case:** `myVariableName`
+* **Pascal Case:** `MyVariableName`
+* **Snake Case:** `my_variable_name`
 
-There are several techniques you can use to make them more readable:
+---
 
-Camel Case
-Each word, except the first, starts with a capital letter:
+### 1. **Camel Case**
 
-myVariableName = "John"
-Pascal Case
-Each word starts with a capital letter:
+* First word lowercase, each subsequent word starts with a capital letter.
 
-MyVariableName = "John"
-Snake Case
-Each word is separated by an underscore character:
+```python
+networkScannerTool = "Nmap"
+print(networkScannerTool)
+```
 
-my_variable_name = "John"
+**Output:**
+
+```
+Nmap
+```
+
+---
+
+### 2. **Pascal Case**
+
+* Each word starts with a capital letter.
+
+```python
+NetworkScannerTool = "Nmap"
+print(NetworkScannerTool)
+```
+
+**Output:**
+
+```
+Nmap
+```
+
+---
+
+### 3. **Snake Case**
+
+* Words are separated by underscores, all lowercase (most common in Python).
+
+```python
+network_scanner_tool = "Nmap"
+print(network_scanner_tool)
+```
+
+**Output:**
+
+```
+Nmap
+```
+---
 
 
+### Assigning Multiple Values
 
-Question: Create a variable named test and assign the value car to it.
-test = "car"
+**Many Values to Multiple Variables:**
+
+```python
+x, y, z = "Orange", "Banana", "Cherry"
+print(x, y, z)
+```
+
+**Cybersecurity Example:**
+
+```python
+tool, protocol, alert_level = "Wireshark", "HTTPS", "High"
+print(tool, protocol, alert_level)
+```
+
+**One Value to Multiple Variables:**
+
+```python
+x = y = z = "Orange"
+print(x, y, z)
+```
+
+**Unpacking a Collection:**
+
+```python
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x, y, z)
+```
+
+**Question Example:**
+Correct syntax to assign `'Hello World'` to 3 variables in one statement:
+
+```python
+x = y = z = 'Hello World'
+```
+
+---
+
+### Outputting Variables
+
+* Use `print()` with commas to output multiple variables:
+
+```python
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)   # Python is awesome
+```
+
+* Use `+` for string concatenation (careful with spaces):
+
+```python
+print(x + " " + y + " " + z)  # Python is awesome
+```
+
+* Numbers can be added with `+`:
+
+```python
+x = 5
+y = 10
+print(x + y)  # 15
+```
+
+* Mixing string + number with `+` gives an error:
+
+```python
+x = 5
+y = "John"
+# print(x + y)  # Error
+print(x, y)     # Works: 5 John
+```
+
+---
+
+### Global and Local Variables
+
+* **Global variable:** Created outside a function, accessible inside and outside functions:
+
+```python
+x = "awesome"
+
+def myfunc():
+    print("Python is " + x)
+
+myfunc()  # Python is awesome
+```
+
+* **Local variable:** Created inside a function, only accessible within the function:
+
+```python
+x = "awesome"
+
+def myfunc():
+    x = "fantastic"
+    print("Python is " + x)
+
+myfunc()           # Python is fantastic
+print("Python is " + x)  # Python is awesome
+```
+
+* **Global keyword:** Declare a variable inside a function to make it global:
+
+```python
+def myfunc():
+    global x
+    x = "fantastic"
+
+myfunc()
+print("Python is " + x)  # Python is fantastic
+```
+
+* Change a global variable inside a function:
+
+```python
+x = "awesome"
+
+def myfunc():
+    global x
+    x = "fantastic"
+
+myfunc()
+print("Python is " + x)  # Python is fantastic
+```
