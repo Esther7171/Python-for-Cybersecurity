@@ -1,3 +1,4 @@
+package Code.Java.questions;
 import java.util.*;
 
 public class menu_card_by_switch {

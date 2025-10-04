@@ -1,4 +1,4 @@
-package questions;
+package Code.Java.questions;
 
 // Question take Two Vaiable A,B and print there sum.
 

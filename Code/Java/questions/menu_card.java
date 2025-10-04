@@ -1,6 +1,6 @@
 // Creating a project. A resturant have a menu setup according to weak number
 
-package questions;
+package Code.Java.questions;
 
 import java.util.*;
 

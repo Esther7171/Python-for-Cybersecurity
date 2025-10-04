@@ -1,4 +1,4 @@
-package questions;
+package Code.Java.questions;
 //  Write a program that checks the relationship between two variables a and b. If a == b, print 'equal'; if a > b, print 'a is greater'; and if a < b, print 'a is lesser'
 
 import java.util.*;

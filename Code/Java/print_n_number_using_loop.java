@@ -1,3 +1,4 @@
+package Code.Java;
 import java.util.Scanner;
 
 public class print_n_number_using_loop {

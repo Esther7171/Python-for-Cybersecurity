@@ -1,3 +1,4 @@
+package Code.Java.questions;
 // import java.util.Scanner;
 
 // public class Print_table {

@@ -1,3 +1,4 @@
+package Code.Java.questions;
 import java.util.Scanner;
 // Check Input is odd number or Even
 public class check_Odd_and_Even {
