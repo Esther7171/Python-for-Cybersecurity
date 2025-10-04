@@ -466,7 +466,7 @@ print("Python is " + x)  # Python is fantastic
 
 * Change a global variable inside a function:
 
-```python
+```py
 x = "awesome"
 
 def myfunc():
