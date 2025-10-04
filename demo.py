@@ -53,3 +53,6 @@ Like this
 # print("Protocol:", protocol)
 # print("Alert Level:", alert_level)
 
+a = input()
+print("Hello,",a)
+

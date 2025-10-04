@@ -16,5 +16,6 @@ Example
 
 ### Solution
 ```
-print("Hello, programmer")
+a = input() 
+print("Hello,",a)
 ```
