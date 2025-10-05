@@ -1,4 +1,4 @@
-## Chapter 1 – Introduction to Python
+# Chapter 1 – Introduction to Python
 
 Hi 👋, in this repo I’m sharing my **Python notes from beginner to advanced**, along with **competitive programming solutions** and **custom cybersecurity scripts**.
 
@@ -94,7 +94,7 @@ So, `.py` is just the standard extension that lets the interpreter recognize you
 
 ---
 
-## Chapter 2 – Variables and Data Types 
+# Chapter 2 – Variables and Data Types 
 
 ### What are Comments?
 
@@ -479,14 +479,14 @@ print("Python is " + x)  # Python is fantastic
 
 ---
 
-# Data Types
+## Data Types
 
 When I started learning Python, one of the most important things I discovered was **data types**.
 A **data type** defines the kind of value a variable can hold and what operations can be performed on it.
 
 ---
 
-## Built-in Data Types in Python
+### Built-in Data Types in Python
 
 Python has several built-in data types, grouped into categories:
 
@@ -501,7 +501,7 @@ Python has several built-in data types, grouped into categories:
 
 ---
 
-## Checking a Data Type
+### Checking a Data Type
 
 You can check the data type of any variable with the built-in `type()` function.
 
@@ -512,7 +512,7 @@ print(type(x))   # Output: <class 'int'>
 
 ---
 
-## Commonly Used Data Types
+### Commonly Used Data Types
 
 When learning Python for security scripting or competitive programming, I often use these main types:
 
@@ -534,7 +534,7 @@ e = None     # none type
 
 ---
 
-## Real-Life Example (Movie Data Table)
+#### Real-Life Example (Movie Data Table)
 
 Think of storing movie details:
 
@@ -547,7 +547,7 @@ Think of storing movie details:
 
 ---
 
-## Examples of Different Data Types
+#### Examples of Different Data Types
 
 ```python
 x = "Hello World"                      # str
@@ -569,7 +569,7 @@ x = None                               # NoneType
 
 ---
 
-## Setting Specific Data Types
+#### Setting Specific Data Types
 
 Python automatically detects types, but I can also explicitly define them with constructor functions:
 
@@ -592,7 +592,7 @@ x = memoryview(bytes(5)) # memoryview
 
 ---
 
-## Numbers in Python
+#### Numbers in Python
 
 Python has **three numeric types**:
 
@@ -614,7 +614,7 @@ print(type(z))   # <class 'complex'>
 
 ---
 
-# Numbers
+## Numbers
 
 When I started learning Python, I realized numbers are used everywhere — from simple calculations to **network scripting, log analysis, and cybersecurity tools**.
 
@@ -626,7 +626,7 @@ Python supports **three main numeric types**:
 
 ---
 
-## Creating Numbers in Python
+### Creating Numbers in Python
 
 Variables of numeric types are created automatically when you assign values.
 
@@ -646,7 +646,7 @@ print(type(z))   # <class 'complex'>
 
 ---
 
-## Integers (`int`)
+#### Integers (`int`)
 
 An **integer** is a whole number, positive or negative, without decimals.
 Python integers can be very large (unlimited length).
@@ -665,7 +665,7 @@ print(type(z))   # <class 'int'>
 
 ---
 
-## Floating-Point Numbers (`float`)
+#### Floating-Point Numbers (`float`)
 
 A **float** is a number with a decimal point.
 
@@ -695,7 +695,7 @@ print(type(z))   # <class 'float'>
 
 ---
 
-## Complex Numbers (`complex`)
+#### Complex Numbers (`complex`)
 
 Complex numbers are written with a `"j"` as the imaginary part.
 
@@ -711,7 +711,7 @@ print(type(z))   # <class 'complex'>
 
 ---
 
-## Type Conversion
+#### Type Conversion
 
 Python lets you **convert between number types** using constructor functions.
 
@@ -742,7 +742,7 @@ print(type(c)) # <class 'complex'>
 
 ---
 
-## Generating Random Numbers
+#### Generating Random Numbers
 
 Python does not have a built-in `random()` function, but it provides a **`random` module** for generating random numbers.
 
@@ -755,3 +755,164 @@ print(random.randrange(1, 10))  # Random number between 1 and 9
 ```
 
 ---
+Here’s a **cleaned, structured, and SEO-friendly version** of your Python Operators notes. I’ve kept it beginner-friendly but professional, with proper formatting for a GitHub repo or documentation.
+
+---
+
+# Chapter 3 – Python Operators
+
+Python operators are special symbols used to perform operations on variables and values.
+
+For example, the `+` operator can be used to add two numbers:
+
+```py
+print(10 + 5)   # Output: 15
+```
+
+Python divides operators into the following groups:
+
+1. **Arithmetic operators**
+2. **Assignment operators**
+3. **Comparison operators**
+4. **Logical operators**
+5. **Identity operators**
+6. **Membership operators**
+7. **Bitwise operators**
+
+---
+
+### 1. Arithmetic Operators
+
+Arithmetic operators are used with numeric values to perform common mathematical operations:
+
+| Operator | Name           | Example  |
+| -------- | -------------- | -------- |
+| `+`      | Addition       | `x + y`  |
+| `-`      | Subtraction    | `x - y`  |
+| `*`      | Multiplication | `x * y`  |
+| `/`      | Division       | `x / y`  |
+| `%`      | Modulus        | `x % y`  |
+| `**`     | Exponentiation | `x ** y` |
+| `//`     | Floor division | `x // y` |
+
+---
+
+### 2. Assignment Operators
+
+Assignment operators are used to assign values to variables:
+| Operator | Example         | Same As                  |
+| -------- | --------------- | ------------------------ |
+| `=`      | `x = 5`         | `x = 5`                  |
+| `+=`     | `x += 3`        | `x = x + 3`              |
+| `-=`     | `x -= 3`        | `x = x - 3`              |
+| `*=`     | `x *= 3`        | `x = x * 3`              |
+| `/=`     | `x /= 3`        | `x = x / 3`              |
+| `%=`     | `x %= 3`        | `x = x % 3`              |
+| `//=`    | `x //= 3`       | `x = x // 3`             |
+| `**=`    | `x **= 3`       | `x = x ** 3`             |
+| `&=`     | `x &= 3`        | `x = x & 3`              |
+| `^=`     | `x ^= 3`        | `x = x ^ 3`              |
+| `>>=`    | `x >>= 3`       | `x = x >> 3`             |
+| `<<=`    | `x <<= 3`       | `x = x << 3`             |
+| `:=`     | `print(x := 3)` | Assigns and prints value |
+
+---
+
+### 3. Comparison Operators
+
+Comparison operators are used to compare two values:
+
+| Operator | Name                     | Example  |
+| -------- | ------------------------ | -------- |
+| `==`     | Equal                    | `x == y` |
+| `!=`     | Not equal                | `x != y` |
+| `>`      | Greater than             | `x > y`  |
+| `<`      | Less than                | `x < y`  |
+| `>=`     | Greater than or equal to | `x >= y` |
+| `<=`     | Less than or equal to    | `x <= y` |
+
+---
+
+## 4. Logical Operators
+
+Logical operators are used to combine conditional statements:
+
+| Operator | Description                                | Example                 |
+| -------- | ------------------------------------------ | ----------------------- |
+| `and`    | Returns `True` if both statements are true | `x < 5 and x < 10`      |
+| `or`     | Returns `True` if at least one is true     | `x < 5 or x < 4`        |
+| `not`    | Reverses the result                        | `not(x < 5 and x < 10)` |
+
+---
+
+## 5. Identity Operators
+
+Identity operators compare objects, not just values, but also their memory location:
+
+| Operator | Description                                | Example      |
+| -------- | ------------------------------------------ | ------------ |
+| `is`     | True if both variables are the same object | `x is y`     |
+| `is not` | True if they are not the same object       | `x is not y` |
+
+---
+
+## 6. Membership Operators
+
+Membership operators test if a sequence exists within an object:
+
+| Operator | Description                                 | Example      |
+| -------- | ------------------------------------------- | ------------ |
+| `in`     | True if a sequence is present in the object | `x in y`     |
+| `not in` | True if not present in the object           | `x not in y` |
+
+---
+
+## 7. Bitwise Operators
+
+Bitwise operators compare numbers at the **binary level**:
+
+| Operator | Name        | Description                                     | Example                                    |    |    |
+| -------- | ----------- | ----------------------------------------------- | ------------------------------------------ | -- | -- |
+| `&`      | AND         | Sets each bit to 1 if both bits are 1           | `x & y`                                    |    |    |
+| `        | `           | OR                                              | Sets each bit to 1 if one of two bits is 1 | `x | y` |
+| `^`      | XOR         | Sets each bit to 1 if only one of two bits is 1 | `x ^ y`                                    |    |    |
+| `~`      | NOT         | Inverts all the bits                            | `~x`                                       |    |    |
+| `<<`     | Shift left  | Shift left, pushing zeros in from the right     | `x << 2`                                   |    |    |
+| `>>`     | Shift right | Shift right, pushing copies of leftmost bit     | `x >> 2`                                   |    |    |
+
+---
+
+## Operator Precedence
+
+Operator precedence defines the order in which operations are executed.
+
+Example – parentheses have the highest precedence:
+
+```py
+print((6 + 3) - (6 + 3))  # Output: 0
+```
+
+Example – multiplication has higher precedence than addition:
+
+```py
+print(100 + 5 * 3)  # Output: 115
+```
+
+### Precedence Table (highest to lowest):
+
+1. `()` – Parentheses
+2. `**` – Exponentiation
+3. `+x, -x, ~x` – Unary operators
+4. `*, /, //, %` – Multiplication, Division, Floor division, Modulus
+5. `+, -` – Addition and Subtraction
+6. `<<, >>` – Bitwise shifts
+7. `&` – Bitwise AND
+8. `^` – Bitwise XOR
+9. `|` – Bitwise OR
+10. Comparisons (`==, !=, >, >=, <, <=, is, is not, in, not in`)
+11. `not` – Logical NOT
+12. `and` – Logical AND
+13. `or` – Logical OR
+
+---
+
