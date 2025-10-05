@@ -53,6 +53,15 @@ Like this
 # print("Protocol:", protocol)
 # print("Alert Level:", alert_level)
 
-a = input()
-print("Hello,",a)
+# a = input()
+# print("Hello,",a)
+
+# age = 30
+# age = age + 1
+# print(age)
+# i = 1
+# while i <= 10:
+#     print(i)
+#     i = i + 1 
+
 

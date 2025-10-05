@@ -476,3 +476,282 @@ def myfunc():
 myfunc()
 print("Python is " + x)  # Python is fantastic
 ```
+
+---
+
+# Data Types
+
+When I started learning Python, one of the most important things I discovered was **data types**.
+A **data type** defines the kind of value a variable can hold and what operations can be performed on it.
+
+---
+
+## Built-in Data Types in Python
+
+Python has several built-in data types, grouped into categories:
+
+* **Text Type** → `str`
+* **Numeric Types** → `int`, `float`, `complex`
+* **Sequence Types** → `list`, `tuple`, `range`
+* **Mapping Type** → `dict`
+* **Set Types** → `set`, `frozenset`
+* **Boolean Type** → `bool`
+* **Binary Types** → `bytes`, `bytearray`, `memoryview`
+* **None Type** → `NoneType`
+
+---
+
+## Checking a Data Type
+
+You can check the data type of any variable with the built-in `type()` function.
+
+```python
+x = 5
+print(type(x))   # Output: <class 'int'>
+```
+
+---
+
+## Commonly Used Data Types
+
+When learning Python for security scripting or competitive programming, I often use these main types:
+
+* **Integer (`int`)** – whole numbers
+* **Floating-point (`float`)** – decimal numbers
+* **String (`str`)** – text
+* **Boolean (`bool`)** – `True` or `False`
+* **None (`NoneType`)** – represents no value
+
+Example:
+
+```python
+a = 1        # int
+b = 1.01     # float
+c = "hii"    # string
+d = True     # boolean
+e = None     # none type
+```
+
+---
+
+## Real-Life Example (Movie Data Table)
+
+Think of storing movie details:
+
+| Title        | Rating | Time Viewed | Favorite | Seen By        |
+| ------------ | ------ | ----------- | -------- | -------------- |
+| Star Wars    | 9.8    | 13          | True     | Tom, Jack      |
+| Harry Potter | 8.6    | 30          | True     | Oggy, Nobita   |
+| Matrix       | 6.1    | 5           | False    | Charlie        |
+| Men in Black | 7.8    | 25          | False    | Phoenix, Gekko |
+
+---
+
+## Examples of Different Data Types
+
+```python
+x = "Hello World"                      # str
+x = 20                                 # int
+x = 20.5                               # float
+x = 1j                                 # complex
+x = ["apple", "banana", "cherry"]      # list
+x = ("apple", "banana", "cherry")      # tuple
+x = range(6)                           # range
+x = {"name": "John", "age": 36}        # dict
+x = {"apple", "banana", "cherry"}      # set
+x = frozenset({"apple", "banana"})     # frozenset
+x = True                               # bool
+x = b"Hello"                           # bytes
+x = bytearray(5)                       # bytearray
+x = memoryview(bytes(5))               # memoryview
+x = None                               # NoneType
+```
+
+---
+
+## Setting Specific Data Types
+
+Python automatically detects types, but I can also explicitly define them with constructor functions:
+
+```python
+x = str("Hello World")   # str
+x = int(20)              # int
+x = float(20.5)          # float
+x = complex(1j)          # complex
+x = list(("apple", "banana", "cherry"))  # list
+x = tuple(("apple", "banana", "cherry")) # tuple
+x = range(6)             # range
+x = dict(name="John", age=36)  # dict
+x = set(("apple", "banana", "cherry"))   # set
+x = frozenset(("apple", "banana", "cherry"))  # frozenset
+x = bool(5)              # bool
+x = bytes(5)             # bytes
+x = bytearray(5)         # bytearray
+x = memoryview(bytes(5)) # memoryview
+```
+
+---
+
+## Numbers in Python
+
+Python has **three numeric types**:
+
+* **int** → Whole numbers (positive/negative, unlimited length)
+* **float** → Numbers with decimals
+* **complex** → Numbers with a real and imaginary part (e.g., `1j`)
+
+Example:
+
+```python
+x = 1        # int
+y = 2.8      # float
+z = 1j       # complex
+
+print(type(x))   # <class 'int'>
+print(type(y))   # <class 'float'>
+print(type(z))   # <class 'complex'>
+```
+
+---
+
+# Numbers
+
+When I started learning Python, I realized numbers are used everywhere — from simple calculations to **network scripting, log analysis, and cybersecurity tools**.
+
+Python supports **three main numeric types**:
+
+* **int** → integers (whole numbers)
+* **float** → floating-point numbers (decimals)
+* **complex** → numbers with real and imaginary parts
+
+---
+
+## Creating Numbers in Python
+
+Variables of numeric types are created automatically when you assign values.
+
+```python
+x = 1     # int
+y = 2.8   # float
+z = 1j    # complex
+```
+
+You can check their type using `type()`:
+
+```python
+print(type(x))   # <class 'int'>
+print(type(y))   # <class 'float'>
+print(type(z))   # <class 'complex'>
+```
+
+---
+
+## Integers (`int`)
+
+An **integer** is a whole number, positive or negative, without decimals.
+Python integers can be very large (unlimited length).
+
+Example:
+
+```python
+x = 1
+y = 35656222554887711
+z = -3255522
+
+print(type(x))   # <class 'int'>
+print(type(y))   # <class 'int'>
+print(type(z))   # <class 'int'>
+```
+
+---
+
+## Floating-Point Numbers (`float`)
+
+A **float** is a number with a decimal point.
+
+Example:
+
+```python
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))   # <class 'float'>
+print(type(y))   # <class 'float'>
+print(type(z))   # <class 'float'>
+```
+
+Floats can also be written in **scientific notation** with `"e"` to indicate powers of 10.
+
+```python
+x = 35e3
+y = 12E4
+z = -87.7e100
+
+print(type(x))   # <class 'float'>
+print(type(y))   # <class 'float'>
+print(type(z))   # <class 'float'>
+```
+
+---
+
+## Complex Numbers (`complex`)
+
+Complex numbers are written with a `"j"` as the imaginary part.
+
+```python
+x = 3+5j
+y = 5j
+z = -5j
+
+print(type(x))   # <class 'complex'>
+print(type(y))   # <class 'complex'>
+print(type(z))   # <class 'complex'>
+```
+
+---
+
+## Type Conversion
+
+Python lets you **convert between number types** using constructor functions.
+
+```python
+x = 1      # int
+y = 2.8    # float
+z = 1j     # complex
+
+# Convert int → float
+a = float(x)
+
+# Convert float → int
+b = int(y)
+
+# Convert int → complex
+c = complex(x)
+
+print(a)       # 1.0
+print(b)       # 2
+print(c)       # (1+0j)
+
+print(type(a)) # <class 'float'>
+print(type(b)) # <class 'int'>
+print(type(c)) # <class 'complex'>
+```
+
+⚠️ Note: You **cannot convert complex numbers** into other numeric types.
+
+---
+
+## Generating Random Numbers
+
+Python does not have a built-in `random()` function, but it provides a **`random` module** for generating random numbers.
+
+Example:
+
+```python
+import random
+
+print(random.randrange(1, 10))  # Random number between 1 and 9
+```
+
+---
