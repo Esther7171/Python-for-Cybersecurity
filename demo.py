@@ -65,3 +65,5 @@ Like this
 #     i = i + 1 
 
 
+a = int(input("Enter your Name: "))
+print(a)

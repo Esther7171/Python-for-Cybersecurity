@@ -916,3 +916,77 @@ print(100 + 5 * 3)  # Output: 115
 
 ---
 
+Here’s a **clean, structured, and SEO-friendly version** of your next section — formatted for GitHub or documentation style:
+
+---
+
+# Chapter 4 – Taking Input in Python
+
+In Python, the `input()` function is used to take user input from the keyboard.
+By default, the input is always taken as a **string**, but you can convert it into other data types like **int** or **float** when needed.
+
+---
+
+## 1. Taking Input as a String
+
+Example:
+
+```py
+a = input("Enter your Name: ")
+print("Your name is:", a)
+```
+
+**Explanation:**
+
+* `input()` displays the message inside the parentheses.
+* Whatever the user types is stored as a **string** in variable `a`.
+
+**Output:**
+
+```
+Enter your Name: Yash
+Your name is: Yash
+```
+
+---
+
+## 2. Taking Input as an Integer
+
+If you want to take numeric input for calculations, you must convert the input to an integer using `int()`.
+
+Example:
+
+```py
+a = int(input("Enter your Number: "))
+print("You entered:", a)
+```
+
+**Output:**
+
+```
+Enter your Number: 10
+You entered: 10
+```
+
+If the user enters a non-numeric value, Python will raise a `ValueError`.
+
+---
+
+## 3. Taking Input as a Float
+
+When you expect a number with decimals, use `float()` for conversion.
+
+Example:
+
+```py
+a = float(input("Enter your Float Number: "))
+print("You entered:", a)
+```
+
+**Output:**
+
+```
+Enter your Float Number: 12.5
+You entered: 12.5
+```
+
